@@ -1,0 +1,12 @@
+<!ELEMENT mobile_tariffs (mobile_tariff)+>
+<!ELEMENT mobile_tariff (id, name_of_tariff, name_of_operator, payroll_per_month,
+        types_of_calls_and_their_prices_per_minute, price_for_sms)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name_of_tariff (#PCDATA)>
+<!ELEMENT name_of_operator (#PCDATA)>
+<!ELEMENT payroll_per_month (#PCDATA)>
+<!ELEMENT types_of_calls_and_their_prices_per_minute (inside_network, outside_network, landline_phone)>
+    <!ELEMENT inside_network (#PCDATA)>
+    <!ELEMENT outside_network (#PCDATA)>
+    <!ELEMENT landline_phone (#PCDATA)>
+<!ELEMENT price_for_sms (#PCDATA)>

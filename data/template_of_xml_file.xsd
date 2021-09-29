@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="mobile_tariffs">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="mobile_tariff" type="mobile_tariff" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="mobile_tariff">
+        <xsd:sequence>
+            <xsd:element ref="id"/>
+            <xsd:element ref="name_of_tariff"/>
+            <xsd:element ref="name_of_operator"/>
+            <xsd:element ref="payroll_per_month"/>
+            <xsd:element ref="types_of_calls_and_their_prices_per_minute"/>
+            <xsd:element ref="price_for_sms"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="id" type="id"/>
+    <xsd:element name="name_of_tariff" type="xsd:string"/>
+    <xsd:element name="name_of_operator" type="name_of_operator"/>
+    <xsd:element name="payroll_per_month" type="xsd:decimal"/>
+    <xsd:element name="types_of_calls_and_their_prices_per_minute" type="types_of_calls_and_their_prices_per_minute"/>
+    <xsd:element name="price_for_sms" type="xsd:decimal"/>
+
+    <xsd:simpleType name="id">
+        <xsd:restriction base="xsd:long"/> <!--How to combine xsd:ID and xsd:long?-->
+    </xsd:simpleType>
+
+    <xsd:simpleType name="name_of_operator">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Life"/>
+            <xsd:enumeration value="Velcom"/>
+            <xsd:enumeration value="MTS"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="types_of_calls_and_their_prices_per_minute">
+        <xsd:sequence>
+            <xsd:element ref="inside_network"/>
+            <xsd:element ref="outside_network"/>
+            <xsd:element ref="landline_phone"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="inside_network" type="xsd:decimal"/>
+    <xsd:element name="outside_network" type="xsd:decimal"/>
+    <xsd:element name="landline_phone" type="xsd:decimal"/>
+
+</xsd:schema>

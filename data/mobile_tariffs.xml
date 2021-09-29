@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mobile_tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="template_of_xml_file.xsd">
+
+    <mobile_tariff>
+        <id>1</id>
+        <name_of_tariff>Unlimited+</name_of_tariff>
+        <name_of_operator>Life</name_of_operator>
+        <payroll_per_month>25.48</payroll_per_month>
+        <types_of_calls_and_their_prices_per_minute>
+            <inside_network>0.4</inside_network>
+            <outside_network>0.5</outside_network>
+            <landline_phone>0.6</landline_phone>
+        </types_of_calls_and_their_prices_per_minute>
+        <price_for_sms>2.0</price_for_sms>
+    </mobile_tariff>
+
+    <mobile_tariff>
+        <id>2</id>
+        <name_of_tariff>Super 10</name_of_tariff>
+        <name_of_operator>Velcom</name_of_operator>
+        <payroll_per_month>21.30</payroll_per_month>
+        <types_of_calls_and_their_prices_per_minute>
+            <inside_network>0.5</inside_network>
+            <outside_network>0.6</outside_network>
+            <landline_phone>0.7</landline_phone>
+        </types_of_calls_and_their_prices_per_minute>
+        <price_for_sms>2.1</price_for_sms>
+    </mobile_tariff>
+
+    <mobile_tariff>
+        <id>3</id>
+        <name_of_tariff>Super</name_of_tariff>
+        <name_of_operator>MTS</name_of_operator>
+        <payroll_per_month>10.81</payroll_per_month>
+        <types_of_calls_and_their_prices_per_minute>
+            <inside_network>0.6</inside_network>
+            <outside_network>0.7</outside_network>
+            <landline_phone>0.8</landline_phone>
+        </types_of_calls_and_their_prices_per_minute>
+        <price_for_sms>2.2</price_for_sms>
+    </mobile_tariff>
+
+    <mobile_tariff>
+        <id>4</id>
+        <name_of_tariff>Super Go</name_of_tariff>
+        <name_of_operator>Life</name_of_operator>
+        <payroll_per_month>8.84</payroll_per_month>
+        <types_of_calls_and_their_prices_per_minute>
+            <inside_network>0.7</inside_network>
+            <outside_network>0.8</outside_network>
+            <landline_phone>0.9</landline_phone>
+        </types_of_calls_and_their_prices_per_minute>
+        <price_for_sms>2.3</price_for_sms>
+    </mobile_tariff>
+
+    <mobile_tariff>
+        <id>5</id>
+        <name_of_tariff>Easy to say</name_of_tariff>
+        <name_of_operator>Velcom</name_of_operator>
+        <payroll_per_month>0.66</payroll_per_month>
+        <types_of_calls_and_their_prices_per_minute>
+            <inside_network>0.8</inside_network>
+            <outside_network>0.9</outside_network>
+            <landline_phone>1.0</landline_phone>
+        </types_of_calls_and_their_prices_per_minute>
+        <price_for_sms>2.4</price_for_sms>
+    </mobile_tariff>
+
+</mobile_tariffs>
